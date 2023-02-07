@@ -5,23 +5,23 @@ import "@openzeppelin/contracts/access/AccessControl.sol";
 
 contract Acesso is AccessControl {
 
-    bytes32 public constant ROL_ADMIN = keccak256("ROL_ADMIN");
-    bytes32 public constant ROL_USER = keccak256("ROL_USER");
+    bytes32 public constant Rol_Owner = keccak256("Rol_Owner");
+    bytes32 public constant Rol_User = keccak256("Rol_User");
 
     constructor() {
-        _grantRole(ROL_ADMIN, msg.sender);
+        _grantRole(Rol_Owner, msg.sender);
     }
 
-    function soloAdmin() public {
-        require(hasRole(ROL_ADMIN, msg.sender), "Esta funcion solo puede ser usada por el admin.");
+    function soloOwner() public {
+        require(hasRole(Rol_Owner, msg.sender), "Esta funcion solo puede ser usada por el propietario.");
     }
 
     function soloUser() public {
-        require(hasRole(ROL_USER, msg.sender), "Esta funcion solo puede ser usada por el user.");
+        require(hasRole(Rol_User, msg.sender), "Esta funcion solo puede ser usada por el usuario.");
     }
 
     function agregarRol(bytes32 rol, address account) public {
-        require(hasRole(ROL_ADMIN, msg.sender), "Esta funcion solo puede ser usada por el admin.");
+        require(hasRole(Rol_Owner, msg.sender), "Esta funcion solo puede ser usada por el propietario.");
 
         _grantRole(rol, account);
     }
