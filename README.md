@@ -1,4 +1,4 @@
-<h1 align="center">Ping pong videogame</h1>
+<h1 align="center">Ink! 🦑 Buzzmer</h1>
   <p>
     <img src="https://media2.giphy.com/media/l41lIvPtFdU3cLQjK/200w.webp?cid=ecf05e47e0kumfbt41ke8hg01rzcsll2glpaxq5y4ufh8v9j&rid=200w.webp&ct=g" align="right" width="250">
     In this project, I created a ping pong game using Rust 🦀 and WASM to display it in the web browser. To use it you must do the following steps:
