@@ -8,5 +8,5 @@
     <li>🥈 Second, put this command in your terminal: <code>./build.sh</code></li> This command will run the build.sh file which is the executable.
     <li>🥉 Finally, the executable will create a link for you through port 8089, click on it so that you can view the game in the browser.</li>
   </ol>
-  <p align="center">Don't forget to have fun!</p>
+  <p align="center">Don't forget to have fun!</p> 
 </p>
